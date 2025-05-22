@@ -5,8 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
+    @RequestMapping("/")
+    public String Home() {
+        return "HOME";
+    }
+    
     @RequestMapping("/hello")
-    public String Hello(){
-        return "Finally you are working!!!!";
+    public String Hello() {
+        return "Finally you are working!!!!, Sooooo much stress";
     }
 }
